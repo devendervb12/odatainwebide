@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>ZBATCH24ODATA</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"ZBATCH24ODATA": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+		<script>
+				sap.ui.localResources("view");
+				var app = new sap.m.App({initialPage:"idProducts1"});
+				var page = sap.ui.view({id:"idProducts1", viewName:"view.Products", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(page);
+				app.placeAt("content");
+		</script>
+
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

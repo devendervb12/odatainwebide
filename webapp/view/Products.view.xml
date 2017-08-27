@@ -1,0 +1,46 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="ZBATCH24ODATA.view.Products" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Products">
+		<content>
+	         <Table items="{/ProductSet}">
+	            <columns>
+	                <Column>
+	                    <Text text="Product ID"/>
+	                </Column>
+	                <Column>
+	                    <Text text="Name"/>
+	                </Column>
+	                <Column>
+	                    <Text text="Category"/>
+	                </Column>
+	                <Column>
+	                    <Text text="Supllier ID"/>
+	                </Column>
+	            </columns>
+	            <items>
+	               <ColumnListItem>
+	                  <cells>
+	                     <Text text="{ProductID}"/>
+	                     <Text text="{Name}"/>
+	                     <Text text="{Category}"/>
+	                     <Text text="{SupplierID}"/>
+	                  </cells>
+	               </ColumnListItem>
+	            </items>
+	         </Table>
+		</content>
+		<footer>
+		   <Bar>
+		     <contentLeft>
+		          <Button text="Create"/>
+		     </contentLeft>
+		      <contentMiddle>
+		          <Button text="Update"/>
+		     </contentMiddle>
+		      <contentRight>
+		          <Button text="Delete"/>
+		     </contentRight>
+		   </Bar>
+		</footer>
+	</Page>
+</core:View>
